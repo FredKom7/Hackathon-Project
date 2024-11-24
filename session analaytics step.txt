@@ -1,0 +1,29 @@
+Prerequisites
+Firebase Firestore Setup:
+
+Create a Firestore database in the Firebase Console.
+Set up a sessions collection to store user activity data.
+Chart.js Setup:
+
+Install Chart.js and React Chart.js 2:
+bash
+Copy code
+npm install chart.js react-chartjs-2
+
+Firebase Configuration
+Use the same firebaseConfig.js as in the previous example to initialize Firebase.
+
+
+How It Works 
+
+Track Session:
+
+The trackSession function stores each user's session details (user ID, login time, usage duration) in Firestore when the user logs in.
+usageDuration is simulated here for demonstration.
+Fetch Sessions:
+
+The fetchSessions function retrieves session data from Firestore and updates the sessions state.
+Display Analytics:
+
+A Line Chart visualizes session data using react-chartjs-2.
+A list displays session details such as login time, user ID, and usage duration.

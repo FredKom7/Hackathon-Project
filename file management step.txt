@@ -1,0 +1,23 @@
+
+Prerequisites
+Install Firebase in your project:
+
+bash
+Copy code
+npm install firebase
+Set up Firebase Storage and Firestore in the Firebase Console.
+
+
+File Management Code
+Firebase Configuration
+Create a firebaseConfig.js file to set up Firebase
+
+How It Works
+Upload: The handleUpload function uploads the file to Firebase Storage and saves its metadata (name and URL) in Firestore.
+Display: The fetchFiles function retrieves all files from Firestore and displays them in a list.
+Delete: The handleDelete function removes the file from both Storage and Firestore.
+Update: The handleUpdate function updates the file's metadata (name) in Firestore.
+Improvements
+Add progress indicators for uploads.
+Implement better error handling.
+Optimize file retrieval for large datasets (e.g., pagination).

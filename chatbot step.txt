@@ -1,0 +1,27 @@
+To integrate this with your login page:
+
+Create a new file called ChatInterface.jsx in your src components folder
+Add routing between the login and chat pages. You'll need to:
+
+npm install react-router-dom
+
+Then create a basic router setup in your App.js:
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginPage from './components/LoginPage';
+import ChatInterface from './components/ChatInterface';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/chat" element={<ChatInterface />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
+
